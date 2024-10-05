@@ -118,6 +118,56 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &1191767417
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1191767419}
+  - component: {fileID: 1191767418}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1191767418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191767417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d31f5012da8cab647b649bfe2187c641, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JessicaDone: 0
+  JohnDone: 0
+  BarthalamewDone: 0
+  JessicaPrefab: {fileID: 7205932332438331876, guid: 40dda370e8ef9004c9e0c1ea63bc7cef, type: 3}
+  JohnPrefab: {fileID: 7205932332438331876, guid: 40dda370e8ef9004c9e0c1ea63bc7cef, type: 3}
+  BarhalamewPrefab: {fileID: 7205932332438331876, guid: 40dda370e8ef9004c9e0c1ea63bc7cef, type: 3}
+--- !u!4 &1191767419
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191767417}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.0500546, y: 6.926546, z: -1.9326673}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1365001897
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -201,3 +251,4 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1365001897}
+  - {fileID: 1191767419}

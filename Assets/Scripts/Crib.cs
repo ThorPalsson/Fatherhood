@@ -27,9 +27,21 @@ public class Crib : MonoBehaviour
     {
         print ("placing baby");
         
-        baby.transform.parent = null; 
+        baby.transform.parent = GameManager.Instance.RoomParent.transform; 
         baby.transform.position = childPos.position; 
 
+        switch(baby.thisBaby)
+        {
+            case BabyEnum.Babies.Jessica:
+                GameManager.Instance.JessicaDone = true; 
+                break; 
+            case BabyEnum.Babies.LongJohn:
+                GameManager.Instance.JohnDone = true; 
+                break; 
+            case BabyEnum.Babies.Barthalamew:
+                GameManager.Instance.BarthalamewDone = true; 
+                break; 
+        }
 
 
         baby.PlaceInCrib();

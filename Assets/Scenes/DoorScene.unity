@@ -496,7 +496,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentMainSceneName: 
   loadingSceneName: 
-  animTimer: 2
+  animTimer: 5
   loadCamera: {fileID: 512146184}
   door: {fileID: 53387649}
   cameraMove: {fileID: 1842974763}

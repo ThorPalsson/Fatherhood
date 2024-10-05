@@ -9,6 +9,8 @@ public class PickUp : MonoBehaviour
     public bool IsHeld = false; 
     public bool IsBaby; 
 
+    public BabyEnum.Babies thisBaby; 
+
     private Rigidbody rb; 
     [SerializeField] private Collider col; 
     [SerializeField] private Collider trigger; 
@@ -70,7 +72,7 @@ public class PickUp : MonoBehaviour
         rb.isKinematic = false; 
         col.enabled = true; 
         trigger.enabled = true;
-        this.transform.parent = null; 
+        this.transform.parent = GameManager.Instance.RoomParent.transform; 
         IsHeld = false; 
         rb.AddForce(dir * power);
     }

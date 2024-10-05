@@ -95,6 +95,12 @@ public class LoadingManager : MonoBehaviour
         {
             StartCoroutine(AnimateAndLoad()); 
             isAnimating = true; 
+            
+            if (PlayerController.Instance != null)
+            {
+                PlayerController.Instance.transform.GetComponent<RoomHolder>().SceneName = currentMainSceneName; 
+            }
+            
             currentMainSceneName = loadingSceneName; 
             loadingSceneName = null; 
         }
@@ -108,11 +114,6 @@ public class LoadingManager : MonoBehaviour
         yield return new WaitForSeconds(animTimer); 
 
         loadingOperation.allowSceneActivation = true; 
-
-        if (PlayerController.Instance != null)
-        {
-            PlayerController.Instance.transform.GetComponent<RoomHolder>().SceneName = currentMainSceneName; 
-        }
 
 
         unLoadingOperation = null; 
