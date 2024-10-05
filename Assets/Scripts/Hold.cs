@@ -6,6 +6,8 @@ public class Hold : MonoBehaviour
     public PickUp pickUpInRange;
     public Crib cribInRange;
 
+    [SerializeField] PickUp HeldObject; 
+
     [SerializeField] private bool isHolding; 
     [SerializeField] private Transform holdPosition; 
 
@@ -28,24 +30,32 @@ public class Hold : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                if (cribInRange == null || pickUpInRange.IsBaby == false)
+                if (cribInRange == null || HeldObject.IsBaby == false)
                 {
-                    pickUpInRange.Throw(500);
+                    HeldObject.Throw(500);
                     isHolding = false;
                     pickUpInRange = null; 
-                } else 
+                } else if (cribInRange != null && HeldObject.IsBaby) 
                 {
-
+                    HeldObject.transform.parent = null;
+                    cribInRange.PlaceBaby(HeldObject);
+                    isHolding = false; 
                 }
+
+                HeldObject = null; 
             }
         }
 
 
         if (pickUpInRange == null) return;
+        if (isHolding) return;
 
         if (Input.GetKeyDown(KeyCode.E))
         {
+            print ("pickup");
            pickUpInRange.PickThisUp(holdPosition);
+           HeldObject = pickUpInRange; 
+           pickUpInRange = null; 
            isHolding = true; 
         }
     }
