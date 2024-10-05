@@ -37,7 +37,7 @@ public class LoadingManager : MonoBehaviour
 
     private void Start()
     {
-        LoadScene("SampleScene", null); 
+        LoadScene("Nursery", null); 
     }
 
     public void LoadScene(string sceneName, GameObject camera)
