@@ -24,6 +24,8 @@ public class PlayerController : MonoBehaviour
         float move = Input.GetAxis("Vertical"); 
         float turn = Input.GetAxis("Horizontal"); 
 
+        if (move < 0) move = 0; 
+
         Vector3 movement = transform.forward * move * movementSpeed * Time.fixedDeltaTime; 
         rb.MovePosition(rb.position + movement); 
 
