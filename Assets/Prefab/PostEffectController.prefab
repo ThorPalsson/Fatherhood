@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volumeProfile: {fileID: 11400000, guid: 7bbe35cdf5d69e14abbb03eccedaa5bd, type: 2}
-  isEnabled: 1
+  isEnabled: 0
   fogDensity: 9.48
   fogDistance: 2.9
   fogNear: 0
@@ -111,23 +111,23 @@ MonoBehaviour:
   isEnabled: 1
   scanlinesWeight: 1
   noiseWeight: 1
-  screenBendX: 3
-  screenBendY: 3
-  vignetteAmount: 0.98
-  vignetteSize: 2.06
-  vignetteRounding: 5.26
-  vignetteSmoothing: 0.2
-  scanLinesDensity: 200
-  scanLinesSpeed: -10
-  noiseAmount: 250
+  screenBendX: 12
+  screenBendY: 12
+  vignetteAmount: 0
+  vignetteSize: 0
+  vignetteRounding: 0
+  vignetteSmoothing: 0
+  scanLinesDensity: 0
+  scanLinesSpeed: 0
+  noiseAmount: 364
   chromaticRed: {x: 0.002, y: -0.002}
   chromaticGreen: {x: -0.002, y: 0.002}
   chromaticBlue: {x: 0, y: 0}
-  grilleOpacity: 0.4
-  grilleCounterOpacity: 0.2
+  grilleOpacity: -0.61
+  grilleCounterOpacity: -2.31
   grilleResolution: 360
   grilleCounterResolution: 540
-  grilleBrightness: 15
+  grilleBrightness: 32.4
   grilleUvRotation: 90
   grilleUvMidPoint: 0.5
   grilleShift: {x: 1, y: 1, z: 1}
