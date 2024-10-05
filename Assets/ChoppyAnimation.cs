@@ -5,7 +5,7 @@ public class ChoppyAnimation : MonoBehaviour
     public Animator animator; 
     public float targetFrameRate = 10f; 
     private float timeBetweenFrames;
-    private float lastFrameTime;
+    private float timeAccumulator;
 
     void Start()
     {
@@ -19,10 +19,12 @@ public class ChoppyAnimation : MonoBehaviour
 
     void Update()
     {
-        if (Time.time - lastFrameTime >= timeBetweenFrames)
+        timeAccumulator += Time.deltaTime; 
+
+        if (timeAccumulator >= timeBetweenFrames)
         {
             animator.speed = 1f;
-            lastFrameTime = Time.time;
+            timeAccumulator = 0f; 
         }
         else
         {

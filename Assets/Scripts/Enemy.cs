@@ -23,6 +23,12 @@ public class Enemy : MonoBehaviour
     {
         if (isStunned) return; 
 
+        if (pc == null)
+        {
+            pc = PlayerController.Instance; 
+            return; 
+        }
+
         Vector3 direction = (pc.transform.position - transform.position).normalized;
         float distance = Vector3.Distance(transform.position, pc.transform.position); 
 

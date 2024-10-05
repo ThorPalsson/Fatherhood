@@ -12,8 +12,8 @@ public class LoadingManager : MonoBehaviour
     private AsyncOperation unLoadingOperation;
     private bool hasLoaded;
     private bool hasUnloaded; 
-    private string currentMainSceneName; 
-    private string loadingSceneName; 
+    [SerializeField] private string currentMainSceneName; 
+    [SerializeField] private string loadingSceneName; 
     private bool isAnimating; 
 
     [SerializeField] private float animTimer; 
@@ -91,7 +91,7 @@ public class LoadingManager : MonoBehaviour
             }
         }
 
-        if (hasLoaded && hasUnloaded && !isAnimating)
+        if (hasLoaded  && !isAnimating)
         {
             StartCoroutine(AnimateAndLoad()); 
             isAnimating = true; 
