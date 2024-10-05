@@ -1,9 +1,15 @@
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
 public class AnimationClipper : MonoBehaviour
 {
     public AnimationClip clip;
+
+    public void Start()
+    {
+        RemoveAlternateKeyframes(clip);
+    }
 
     [ContextMenu("Clip")]
     void RemoveAlternateKeyframes(AnimationClip clip)
