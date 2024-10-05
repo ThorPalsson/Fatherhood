@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -15,6 +16,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject RoomParent;
 
+    public CribEntry[] cribs; 
+
 
     private void Awake()
     {
@@ -26,4 +29,11 @@ public class GameManager : MonoBehaviour
             Instance = this; 
         }
     }
+}
+
+[Serializable]
+public class CribEntry 
+{
+    public int Id; 
+    public BabyEnum.Babies Baby; 
 }

@@ -1,9 +1,51 @@
+using System.Linq;
+using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Crib : MonoBehaviour
 {
+    [SerializeField] private int cribId; 
+    private bool start; 
 
     [SerializeField] private Transform childPos;
+
+
+    private void Update()
+    {
+        if (!start)
+        {
+            var gm = GameManager.Instance; 
+
+            if (gm == null) return; 
+
+            var baby = gm.cribs.FirstOrDefault(X => X.Id == cribId).Baby;
+
+            switch(baby)
+            {
+                case BabyEnum.Babies.None:
+                    break;
+                case BabyEnum.Babies.Jessica:
+                    print ("spawning jessica in crib");
+                    GameObject g = Instantiate(gm.JessicaPrefab, childPos.position, Quaternion.identity); 
+                    g.transform.parent = childPos; 
+                    g.GetComponent<PickUp>().enabled = false; 
+                    break;
+                case BabyEnum.Babies.LongJohn:
+                    var g1 = Instantiate(gm.JohnPrefab, childPos.position, Quaternion.identity); 
+                    g1.transform.parent = childPos; 
+                    g1.GetComponent<PickUp>().enabled = false; 
+                    break;
+                case BabyEnum.Babies.Barthalamew:
+                    var g2 = Instantiate(gm.BarhalamewPrefab, childPos.position, Quaternion.identity); 
+                    g2.transform.parent = childPos; 
+                    g2.GetComponent<PickUp>().enabled = false; 
+                    break;
+            }
+
+            start = true; 
+        }
+    }
 
     public void OnTriggerEnter(Collider other)
     {
@@ -34,12 +76,18 @@ public class Crib : MonoBehaviour
         {
             case BabyEnum.Babies.Jessica:
                 GameManager.Instance.JessicaDone = true; 
+                var entry = GameManager.Instance.cribs.First(x => x.Id == cribId); 
+                entry.Baby = BabyEnum.Babies.Jessica;
                 break; 
             case BabyEnum.Babies.LongJohn:
                 GameManager.Instance.JohnDone = true; 
+                var entry3 = GameManager.Instance.cribs.First(x => x.Id == cribId); 
+                entry3.Baby = BabyEnum.Babies.LongJohn;
                 break; 
             case BabyEnum.Babies.Barthalamew:
                 GameManager.Instance.BarthalamewDone = true; 
+                var entry5 = GameManager.Instance.cribs.First(x => x.Id == cribId); 
+                entry5.Baby = BabyEnum.Babies.Barthalamew;
                 break; 
         }
 

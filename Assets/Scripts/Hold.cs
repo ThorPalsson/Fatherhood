@@ -63,6 +63,7 @@ public class Hold : MonoBehaviour
 
            if (HeldObject.IsBaby)
            {
+                print ("Setting hold baby to "+ HeldObject.thisBaby.ToString()); 
                 HeldBaby = HeldObject.thisBaby; 
            }
         }

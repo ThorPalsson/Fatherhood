@@ -19,6 +19,9 @@ public class BabySpawner : MonoBehaviour
 
             var hold = pc.transform.GetComponent<Hold>();
 
+
+            print (hold.HeldBaby); 
+
             switch(ThisBaby)
             {
                 case BabyEnum.Babies.Jessica:

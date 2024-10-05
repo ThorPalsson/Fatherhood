@@ -236,6 +236,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3345632481509962869, guid: ea8358b87eac5fd4bb79b26b19439bea, type: 3}
+      propertyPath: cribId
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5166261871440596909, guid: ea8358b87eac5fd4bb79b26b19439bea, type: 3}
       propertyPath: m_Name
       value: Crib (2)
@@ -1599,6 +1603,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3345632481509962869, guid: ea8358b87eac5fd4bb79b26b19439bea, type: 3}
+      propertyPath: cribId
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5166261871440596909, guid: ea8358b87eac5fd4bb79b26b19439bea, type: 3}
       propertyPath: m_Name
       value: Crib (1)
@@ -2243,7 +2251,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5160995714622342856, guid: f72ba477af6f4584c8d8338901312a64, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.7150006
+      value: -2.21
       objectReference: {fileID: 0}
     - target: {fileID: 5160995714622342856, guid: f72ba477af6f4584c8d8338901312a64, type: 3}
       propertyPath: m_LocalPosition.y

@@ -378,7 +378,7 @@ MonoBehaviour:
   visualIndicator: {fileID: 1148564858742290896}
   IsHeld: 0
   IsBaby: 1
-  thisBaby: 0
+  thisBaby: 1
   col: {fileID: 849307245676783267}
   trigger: {fileID: 9063606595710814409}
 --- !u!65 &9063606595710814409
