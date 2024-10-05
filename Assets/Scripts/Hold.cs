@@ -11,6 +11,8 @@ public class Hold : MonoBehaviour
     [SerializeField] private bool isHolding; 
     [SerializeField] private Transform holdPosition; 
 
+    public BabyEnum.Babies HeldBaby; 
+
 
     private void Awake()
     {
@@ -42,7 +44,8 @@ public class Hold : MonoBehaviour
                     isHolding = false; 
                 }
 
-                HeldObject = null; 
+                HeldObject = null;
+                HeldBaby = BabyEnum.Babies.None;  
             }
         }
 
@@ -57,6 +60,11 @@ public class Hold : MonoBehaviour
            HeldObject = pickUpInRange; 
            pickUpInRange = null; 
            isHolding = true; 
+
+           if (HeldObject.IsBaby)
+           {
+                HeldBaby = HeldObject.thisBaby; 
+           }
         }
     }
 }
