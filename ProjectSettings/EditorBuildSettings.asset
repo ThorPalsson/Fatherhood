@@ -6,20 +6,32 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/GameScenes/MainMenu.unity
     guid: 98bbc324fdc254240ab96ef1258e136b
   - enabled: 1
-    path: Assets/Scenes/DoorScene.unity
+    path: Assets/Scenes/GameScenes/DoorScene.unity
     guid: 1cb193158aae3d24d842be729a0062e7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
     path: Assets/Scenes/PlayerScene.unity
     guid: bf10cf6948981c648b874ee396544c9b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestScene01.unity
     guid: 03015dc0929797144892672ece512f0f
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Hallway.unity
+    guid: cd5a4923e1dbcf24cabe1810fe192ce3
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/MainRoom.unity
+    guid: 0592a42bed4368c4e9d1376905193c7a
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Nursery.unity
+    guid: 15cbf6928b3dfbd4c93fc71aa348bedb
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Office.unity
+    guid: 595731a5441594b4dbd06aba6a21a4d5
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
