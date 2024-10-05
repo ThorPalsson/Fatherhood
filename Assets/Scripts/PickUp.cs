@@ -1,4 +1,6 @@
 using System.Security.Cryptography;
+using System.Threading.Tasks;
+using TMPro;
 using UnityEngine;
 
 public class PickUp : MonoBehaviour
@@ -38,6 +40,19 @@ public class PickUp : MonoBehaviour
         }
     }
 
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (rb.linearVelocity.magnitude > 2)
+        {
+            var col = collision.collider; 
+            print ($"i crashed into {col.name}");
+            if (col.CompareTag("Enemy"))
+            {
+                col.GetComponent<Enemy>().Stun(); 
+            }
+        }
+    }
+
     public void PickThisUp(Transform thing)
     {
         rb.isKinematic = true; 
@@ -50,14 +65,14 @@ public class PickUp : MonoBehaviour
     }
 
 
-    public void Throw(float power)
+    public void Throw(float power, Vector3 dir)
     {
         rb.isKinematic = false; 
         col.enabled = true; 
         trigger.enabled = true;
         this.transform.parent = null; 
         IsHeld = false; 
-        rb.AddForce(transform.forward * power);
+        rb.AddForce(dir * power);
     }
 
     public void PlaceInCrib()
