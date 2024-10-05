@@ -3,6 +3,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class LoadingManager : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class LoadingManager : MonoBehaviour
     [SerializeField] private string currentMainSceneName; 
     [SerializeField] private string loadingSceneName; 
     private bool isAnimating; 
+    [SerializeField] private VideoPlayer vp;
 
     [SerializeField] private float animTimer; 
     [SerializeField] private GameObject loadCamera; 
@@ -108,22 +110,16 @@ public class LoadingManager : MonoBehaviour
 
     private IEnumerator AnimateAndLoad()
     {
-        door.enabled = true;
-        cameraMove.enabled = true; 
 
+        vp.Play();
         yield return new WaitForSeconds(animTimer); 
 
         loadingOperation.allowSceneActivation = true; 
-
-
         unLoadingOperation = null; 
         loadingOperation = null; 
         isAnimating = false; 
         hasLoaded = false; 
         hasUnloaded = false; 
-
         loadCamera.SetActive(false);
-        door.enabled = false;
-        cameraMove.enabled = false;
     }
 }

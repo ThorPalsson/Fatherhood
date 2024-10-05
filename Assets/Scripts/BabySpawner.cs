@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 public class BabySpawner : MonoBehaviour
@@ -28,17 +29,17 @@ public class BabySpawner : MonoBehaviour
                     if (gameManager.JessicaDone || hold.HeldBaby == BabyEnum.Babies.Jessica) break;  
 
                     print ("Spawning baby"); 
-                    Instantiate(gameManager.JessicaPrefab); 
+                    Instantiate(gameManager.JessicaPrefab, this.transform.position, Quaternion.identity); 
                     break;
                 case BabyEnum.Babies.LongJohn:
                     if (gameManager.JohnDone || hold.HeldBaby == BabyEnum.Babies.LongJohn) break; 
                 
-                    Instantiate(gameManager.JohnPrefab); 
+                    Instantiate(gameManager.JohnPrefab, this.transform.position, Quaternion.identity);  
                     break;
                 case BabyEnum.Babies.Barthalamew:
                     if (gameManager.BarthalamewDone || hold.HeldBaby == BabyEnum.Babies.Barthalamew) break; 
 
-                    Instantiate(gameManager.BarhalamewPrefab); 
+                    Instantiate(gameManager.BarhalamewPrefab, this.transform.position, Quaternion.identity); 
                     break;
             }
 
