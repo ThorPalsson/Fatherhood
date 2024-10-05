@@ -32,5 +32,7 @@ public class PlayerController : MonoBehaviour
         float turnAmount = turn * turnSpeed * Time.fixedDeltaTime; 
         Quaternion turnRotation = Quaternion.Euler(0, turnAmount, 0);
         rb.MoveRotation(rb.rotation * turnRotation); 
+
+        rb.linearVelocity = Vector3.zero; 
     }
 }

@@ -8,13 +8,13 @@ public class PickUp : MonoBehaviour
     public bool IsBaby; 
 
     private Rigidbody rb; 
-    private Collider col; 
+    [SerializeField] private Collider col; 
+    [SerializeField] private Collider trigger; 
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.isKinematic = true; 
-        col = GetComponent<Collider>();
     }    
 
     public void OnTriggerEnter(Collider other)
@@ -31,6 +31,9 @@ public class PickUp : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            if (Hold.Instance.pickUpInRange == this)
+                Hold.Instance.pickUpInRange = null; 
+            
             visualIndicator.SetActive(false); 
         }
     }
@@ -39,6 +42,7 @@ public class PickUp : MonoBehaviour
     {
         rb.isKinematic = true; 
         col.enabled = false; 
+        trigger.enabled = false;
         this.transform.position = thing.position; 
         this.transform.parent = thing; 
         visualIndicator.SetActive(false);
@@ -50,8 +54,17 @@ public class PickUp : MonoBehaviour
     {
         rb.isKinematic = false; 
         col.enabled = true; 
+        trigger.enabled = true;
         this.transform.parent = null; 
         IsHeld = false; 
         rb.AddForce(transform.forward * power);
+    }
+
+    public void PlaceInCrib()
+    {
+        col.enabled = false; 
+        trigger.enabled = false; 
+        visualIndicator.SetActive(false); 
+        rb.isKinematic = true; 
     }
 }
