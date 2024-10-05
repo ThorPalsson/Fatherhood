@@ -87,7 +87,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c23e3b12dc18c42a140437e53d3951, type: 3}
   m_Name: Tonemapping
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   mode:
     m_OverrideState: 1
     m_Value: 0
@@ -136,22 +136,22 @@ MonoBehaviour:
     m_Value: 1
   screenBendX:
     m_OverrideState: 1
-    m_Value: 1000
+    m_Value: 3
   screenBendY:
     m_OverrideState: 1
-    m_Value: 1000
+    m_Value: 3
   vignetteAmount:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.98
   vignetteSize:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 2.06
   vignetteRounding:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 5.26
   vignetteSmoothing:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.2
   scanlinesDensity:
     m_OverrideState: 1
     m_Value: 200
@@ -163,10 +163,10 @@ MonoBehaviour:
     m_Value: 250
   chromaticRed:
     m_OverrideState: 1
-    m_Value: {x: 0, y: 0}
+    m_Value: {x: 0.002, y: -0.002}
   chromaticGreen:
     m_OverrideState: 1
-    m_Value: {x: 0, y: 0}
+    m_Value: {x: -0.002, y: 0.002}
   chromaticBlue:
     m_OverrideState: 1
     m_Value: {x: 0, y: 0}
@@ -323,13 +323,13 @@ MonoBehaviour:
   active: 1
   widthPixelation:
     m_OverrideState: 1
-    m_Value: 512
+    m_Value: 1280
   heightPixelation:
     m_OverrideState: 1
-    m_Value: 256
+    m_Value: 720
   colorPrecision:
     m_OverrideState: 1
-    m_Value: 4.6
+    m_Value: 16
 --- !u!114 &-2582408736680085862
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -370,16 +370,16 @@ MonoBehaviour:
   active: 1
   patternIndex:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 2
   ditherThreshold:
     m_OverrideState: 1
-    m_Value: 3.53
+    m_Value: 10
   ditherStrength:
     m_OverrideState: 1
-    m_Value: 1.37
+    m_Value: 1
   ditherScale:
     m_OverrideState: 1
-    m_Value: 4.67
+    m_Value: 2
 --- !u!114 &-118062078957075380
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -459,16 +459,16 @@ MonoBehaviour:
   active: 1
   fogDensity:
     m_OverrideState: 1
-    m_Value: 1.2
+    m_Value: 9.48
   fogDistance:
     m_OverrideState: 1
-    m_Value: 6
+    m_Value: 2.9
   fogColor:
     m_OverrideState: 1
-    m_Value: {r: 0, g: 0, b: 0, a: 0}
+    m_Value: {r: 1, g: 1, b: 1, a: 0}
   ambientColor:
     m_OverrideState: 1
-    m_Value: {r: 0, g: 0, b: 0, a: 0}
+    m_Value: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 0}
   fogNear:
     m_OverrideState: 1
     m_Value: 0
@@ -483,7 +483,7 @@ MonoBehaviour:
     m_Value: 458
   noiseScale:
     m_OverrideState: 1
-    m_Value: 843
+    m_Value: 837
   noiseStrength:
     m_OverrideState: 1
     m_Value: 0.029
@@ -499,7 +499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf1aba9553839d41ae37dd52e9ebcce, type: 3}
   m_Name: MotionBlur
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   mode:
     m_OverrideState: 1
     m_Value: 0
