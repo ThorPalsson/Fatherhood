@@ -32,7 +32,7 @@ public class Hold : MonoBehaviour
             {
                 if (cribInRange == null || HeldObject.IsBaby == false)
                 {
-                    HeldObject.Throw(500);
+                    HeldObject.Throw(500, transform.forward);
                     isHolding = false;
                     pickUpInRange = null; 
                 } else if (cribInRange != null && HeldObject.IsBaby) 
