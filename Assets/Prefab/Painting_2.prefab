@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2752233828925734006}
   - component: {fileID: 467606070150509733}
   m_Layer: 0
-  m_Name: STOGIE_Painting
+  m_Name: Painting_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 2911438323398889501}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 7.948, y: 4.3, z: -6.47}
+  m_LocalPosition: {x: 7.9480004, y: 4.3, z: -12.47}
   m_LocalScale: {x: 3.2552, y: 1.755692, z: 0.114745796}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -152,7 +152,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a9f3ebe696587aa45953f621c844a25e, type: 2}
+  - {fileID: 2100000, guid: f2e6b39d8d4bbe14f948c6fe65321caf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
