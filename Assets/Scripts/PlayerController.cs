@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rb; 
 
     private bool canMove = true; 
+    [SerializeField] private Animator anim; 
 
     private void Awake()
     {
@@ -24,7 +25,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        
     }
 
     private void FixedUpdate()
@@ -38,7 +38,8 @@ public class PlayerController : MonoBehaviour
         {
             rb.linearVelocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero; 
-        }
+            anim.SetBool("Walking", false); 
+        } else anim.SetBool("Walking", true); 
 
         if (move < 0) move = 0; 
 

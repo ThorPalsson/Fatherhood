@@ -10,6 +10,7 @@ public class Hold : MonoBehaviour
 
     [SerializeField] private bool isHolding; 
     [SerializeField] private Transform holdPosition; 
+    [SerializeField] private Animator anim; 
 
     public BabyEnum.Babies HeldBaby; 
 
@@ -34,18 +35,22 @@ public class Hold : MonoBehaviour
             {
                 if (cribInRange == null || HeldObject.IsBaby == false)
                 {
-                    HeldObject.Throw(500, transform.forward);
+                    HeldObject?.Throw(500, transform.forward);
                     isHolding = false;
                     pickUpInRange = null; 
+                    anim.SetTrigger("Throw"); 
+                    anim.SetBool("Carry", false);
                 } else if (cribInRange != null && HeldObject.IsBaby) 
                 {
                     HeldObject.transform.parent = null;
                     cribInRange.PlaceBaby(HeldObject);
                     isHolding = false; 
+                    anim.SetBool("Carry", false);
                 }
 
                 HeldObject = null;
-                HeldBaby = BabyEnum.Babies.None;  
+                HeldBaby = BabyEnum.Babies.None; 
+                isHolding = false;  
             }
         }
 
@@ -60,9 +65,13 @@ public class Hold : MonoBehaviour
            HeldObject = pickUpInRange; 
            pickUpInRange = null; 
            isHolding = true; 
+           anim.SetTrigger("PickUp"); 
+            anim.SetBool("Carry", true);
+
 
            if (HeldObject.IsBaby)
            {
+                print ("Setting hold baby to "+ HeldObject.thisBaby.ToString()); 
                 HeldBaby = HeldObject.thisBaby; 
            }
         }

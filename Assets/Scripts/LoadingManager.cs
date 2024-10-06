@@ -3,6 +3,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class LoadingManager : MonoBehaviour
 {
@@ -15,12 +16,18 @@ public class LoadingManager : MonoBehaviour
     [SerializeField] private string currentMainSceneName; 
     [SerializeField] private string loadingSceneName; 
     private bool isAnimating; 
+    [SerializeField] private VideoPlayer vp;
 
     [SerializeField] private float animTimer; 
     [SerializeField] private GameObject loadCamera; 
     [SerializeField] private Animator door, cameraMove;
 
     private bool isFirst = true;  
+
+    [SerializeField] private AudioClip[] loadingClips; 
+
+
+    [SerializeField] private AudioSource source; 
 
 
     private void Awake()
@@ -37,14 +44,13 @@ public class LoadingManager : MonoBehaviour
 
     private void Start()
     {
-        LoadScene("SampleScene", null); 
+        LoadScene("Nursery", null); 
     }
 
     public void LoadScene(string sceneName, GameObject camera)
     {
         if (camera != null)
             camera.SetActive(false); 
-
 
         loadCamera.SetActive(true); 
         loadingSceneName = sceneName; 
@@ -108,22 +114,25 @@ public class LoadingManager : MonoBehaviour
 
     private IEnumerator AnimateAndLoad()
     {
-        door.enabled = true;
-        cameraMove.enabled = true; 
 
+        vp.Play();
         yield return new WaitForSeconds(animTimer); 
 
+
+        var Randy = UnityEngine.Random.Range(0,10);
+
+        if (Randy > 5)
+        {
+            source.clip = loadingClips[UnityEngine.Random.Range(0, loadingClips.Length)];
+            source.Play();
+        }
+
         loadingOperation.allowSceneActivation = true; 
-
-
         unLoadingOperation = null; 
         loadingOperation = null; 
         isAnimating = false; 
         hasLoaded = false; 
         hasUnloaded = false; 
-
         loadCamera.SetActive(false);
-        door.enabled = false;
-        cameraMove.enabled = false;
     }
 }
