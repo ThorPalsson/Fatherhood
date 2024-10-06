@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7704905207235135090}
   - component: {fileID: 2019504683200034615}
   - component: {fileID: 4620310242019016840}
+  - component: {fileID: 6601333084345680857}
   m_Layer: 0
   m_Name: Bartholomew
   m_TagString: Untagged
@@ -96,6 +97,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.7, y: 0.52, z: 0.6}
   m_Center: {x: 0.05, y: 0.29, z: 0.14}
+--- !u!54 &6601333084345680857
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7845595087708837780}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &23365757654280033
 PrefabInstance:
   m_ObjectHideFlags: 0

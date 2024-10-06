@@ -1,4 +1,3 @@
-using Unity.Mathematics;
 using UnityEngine;
 
 public class BabySpawner : MonoBehaviour
@@ -6,7 +5,6 @@ public class BabySpawner : MonoBehaviour
    public BabyEnum.Babies ThisBaby; 
 
    private bool start; 
-
 
    private void Update()
    {
@@ -18,7 +16,7 @@ public class BabySpawner : MonoBehaviour
             if (gameManager == null || pc == null) return; 
 
 
-            var hold = pc.transform.GetComponent<Hold>();
+           var hold = pc.transform.GetComponent<Hold>();
 
 
             print (hold.HeldBaby); 
@@ -32,6 +30,7 @@ public class BabySpawner : MonoBehaviour
                     var g = Instantiate(gameManager.JessicaPrefab, this.transform.position, Quaternion.identity); 
                     g.transform.parent = gameManager.RoomParent.transform; 
                     break;
+
                 case BabyEnum.Babies.LongJohn:
                     if (gameManager.JohnDone || hold.HeldBaby == BabyEnum.Babies.LongJohn) break; 
                 
