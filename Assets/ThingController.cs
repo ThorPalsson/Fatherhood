@@ -27,13 +27,13 @@ public class ThingController : MonoBehaviour
         yield return new WaitForSeconds(6f); 
         GameManager.Instance.StartConversation("No, I will not congratulate you", 8858567);
         yield return new WaitForSeconds(6f);
-        GameManager.Instance.StartConversation("Look at your self, you are a wretch", 884); 
+        GameManager.Instance.StartConversation("Look at yourself, you are a wretch", 884); 
         yield return new WaitForSeconds(6f); 
         GameManager.Instance.StartConversation("Pitiful excuse of a father", 28656564); 
         yield return new WaitForSeconds(6f); 
         GameManager.Instance.StartConversation("You have done NOTHING HERE", 838);
         yield return new WaitForSeconds(6f); 
-        GameManager.Instance.StartConversation("NOTHING I TELL YEE", 8884563);  
+        GameManager.Instance.StartConversation("NOTHING I TELL YOU", 8884563);  
         yield return new WaitForSeconds(6f); 
         SceneManager.LoadScene("EndingCutscene"); 
     }
