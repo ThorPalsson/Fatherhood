@@ -20,7 +20,7 @@ Material:
   stringTagMap: {}
   disabledShaderPasses:
   - MOTIONVECTORS
-  m_LockedProperties: 
+  m_LockedProperties: Vector1_6F288C5B
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -95,7 +95,7 @@ Material:
     - Boolean_D258FF8E: 0
     - DeformMagnitude: 0
     - Vector1_21C41D02: 256
-    - Vector1_6F288C5B: 0.5
+    - Vector1_6F288C5B: 0
     - Vector1_B2CC132F: 16
     - Vector1_B9994903: 11
     - Vector1_E8746023: 16
@@ -132,7 +132,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_2E5415DE: {r: 1, g: 1, b: 1, a: 0}
+    - Color_2E5415DE: {r: 1, g: 0.8820755, b: 0.8820755, a: 0}
     - Vector2_8044833E: {r: 1, g: 1, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
