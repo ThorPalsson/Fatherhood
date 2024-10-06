@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     public List<int> NarrativeIds = new List<int>();  
 
     [SerializeField] private AudioSource source; 
+    [SerializeField] private AudioSource speakSource;
 
 
     private void Awake()
@@ -71,6 +72,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator Type(string message)
     {
+        speakSource.Play();
         for (int i = 0; i < message.Length; i++)
         {
             dialogueText.text += message[i]; 
@@ -80,7 +82,8 @@ public class GameManager : MonoBehaviour
 
         //Typing is over
 
-        yield return new WaitForSeconds(4); 
+        yield return new WaitForSeconds(1.5f); 
+        speakSource.Stop();
         EndConversation();
     }
 }
