@@ -9,6 +9,7 @@ public class EnemySpawner : MonoBehaviour
 
     [SerializeField] private float timebetweenSpawns = .2f; 
     [SerializeField] private float spawningTimer = 120;
+    public GameObject thing; 
 
     private float timer;
     private float timetime; 
@@ -30,6 +31,7 @@ public class EnemySpawner : MonoBehaviour
 
         if (timetime > spawningTimer)
         {
+            thing.SetActive(true); 
             isActive = false; 
         }
     }
@@ -37,7 +39,7 @@ public class EnemySpawner : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        	isActive = true;
-            this.transform.GetComponent<Collider>().enabled = false; 
+       /* isActive = true;
+        this.transform.GetComponent<Collider>().enabled = false; */
     }
 }

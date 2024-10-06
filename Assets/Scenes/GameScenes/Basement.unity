@@ -870,6 +870,7 @@ MonoBehaviour:
   spawnLocations: []
   timebetweenSpawns: 0.2
   spawningTimer: 120
+  thing: {fileID: 0}
 --- !u!1 &114033738
 GameObject:
   m_ObjectHideFlags: 0
@@ -3820,6 +3821,7 @@ MonoBehaviour:
   - {fileID: 1422385838}
   timebetweenSpawns: 0.2
   spawningTimer: 120
+  thing: {fileID: 0}
 --- !u!4 &522234413
 Transform:
   m_ObjectHideFlags: 0
@@ -3860,7 +3862,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 29.31, y: 15.03, z: 29.4}
   m_Center: {x: 0, y: 0, z: 0}
@@ -4366,6 +4368,91 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7548219713028542297, guid: 2a0fbab426c32f8489a464f1367b67fc, type: 3}
   m_PrefabInstance: {fileID: 184868015049973902}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &621339396
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1091460559642941460, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: id
+      value: 471859
+      objectReference: {fileID: 0}
+    - target: {fileID: 1091460559642941460, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: message
+      value: JEREMY! You scoundrel, its time for bed!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1091460559642941460, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3cdbdb4f15f67e348b1b13f8cfac32af, type: 3}
+    - target: {fileID: 2221792747046664890, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_Name
+      value: Jeremt
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221792747046664890, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 15.764454
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 37.34502
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 19.678492
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 21.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7125784
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70159256
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
 --- !u!1 &629684212 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8801884263428895014, guid: e3baecbcc7e75ac45ab3e008bbabde20, type: 3}
@@ -5472,6 +5559,7 @@ MonoBehaviour:
   spawnLocations: []
   timebetweenSpawns: 0.2
   spawningTimer: 120
+  thing: {fileID: 0}
 --- !u!1001 &780586558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6377,6 +6465,7 @@ MonoBehaviour:
   spawnLocations: []
   timebetweenSpawns: 0.2
   spawningTimer: 120
+  thing: {fileID: 0}
 --- !u!1001 &875788297
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7900,6 +7989,7 @@ MonoBehaviour:
   spawnLocations: []
   timebetweenSpawns: 0.2
   spawningTimer: 120
+  thing: {fileID: 0}
 --- !u!4 &1085461599 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7548219713028542297, guid: 2a0fbab426c32f8489a464f1367b67fc, type: 3}
@@ -9391,6 +9481,7 @@ MonoBehaviour:
   spawnLocations: []
   timebetweenSpawns: 0.2
   spawningTimer: 120
+  thing: {fileID: 0}
 --- !u!4 &1300817416 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7548219713028542297, guid: 2a0fbab426c32f8489a464f1367b67fc, type: 3}
@@ -9892,6 +9983,7 @@ MonoBehaviour:
   spawnLocations: []
   timebetweenSpawns: 0.2
   spawningTimer: 120
+  thing: {fileID: 0}
 --- !u!4 &1432740066 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 713307121146545090, guid: 1474b5916fa1c6d489e184ab914a4303, type: 3}
@@ -10438,6 +10530,7 @@ MonoBehaviour:
   spawnLocations: []
   timebetweenSpawns: 0.2
   spawningTimer: 120
+  thing: {fileID: 0}
 --- !u!4 &1542597233 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 713307121146545090, guid: 1474b5916fa1c6d489e184ab914a4303, type: 3}
@@ -10700,6 +10793,7 @@ MonoBehaviour:
   spawnLocations: []
   timebetweenSpawns: 0.2
   spawningTimer: 120
+  thing: {fileID: 0}
 --- !u!1001 &1597756226
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24462,6 +24556,7 @@ SceneRoots:
   - {fileID: 522234413}
   - {fileID: 514249453}
   - {fileID: 896105796}
+  - {fileID: 621339396}
   - {fileID: 1076697070}
   - {fileID: 1549787464}
   - {fileID: 1841050256}

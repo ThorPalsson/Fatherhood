@@ -90,8 +90,8 @@ public class GameManager : MonoBehaviour
 
         //Typing is over
 
-        yield return new WaitForSeconds(1.5f); 
         speakSource.Stop();
+        yield return new WaitForSeconds(1.5f); 
         EndConversation();
     }
 }
