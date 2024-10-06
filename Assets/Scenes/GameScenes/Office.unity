@@ -827,16 +827,28 @@ PrefabInstance:
       value: DialogueTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.169974
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 7.5094733
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 20.755434
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.754992
+      value: -0.47
       objectReference: {fileID: 0}
     - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.5981455
+      value: 2.85
       objectReference: {fileID: 0}
     - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14
+      value: -9.76
       objectReference: {fileID: 0}
     - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
       propertyPath: m_LocalRotation.w

@@ -22,6 +22,8 @@ public class LoadingManager : MonoBehaviour
     [SerializeField] private GameObject loadCamera; 
     [SerializeField] private Animator door, cameraMove;
 
+    public AudioSource doorAudio; 
+
     private bool isFirst = true;  
 
     [SerializeField] private AudioClip[] loadingClips; 
@@ -116,6 +118,7 @@ public class LoadingManager : MonoBehaviour
     {
 
         vp.Play();
+        doorAudio.Play();
         yield return new WaitForSeconds(animTimer); 
 
 
