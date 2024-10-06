@@ -43,6 +43,13 @@ public class GameManager : MonoBehaviour
         StartCoroutine(Type(message)); 
     }
 
+    public void EndConversation()
+    {
+        PlayerController.Instance.canMove = true; 
+        DialogueParent.SetActive(false); 
+        dialogueText.text = "";
+    }
+
 
     private IEnumerator Type(string message)
     {
@@ -54,6 +61,9 @@ public class GameManager : MonoBehaviour
         }
 
         //Typing is over
+
+        yield return new WaitForSeconds(4); 
+        EndConversation();
     }
 }
 
