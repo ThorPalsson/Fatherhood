@@ -6,6 +6,8 @@ public class SpeakStarter : MonoBehaviour
    public string message;
    public int id = 0; 
 
+   public AudioClip audioClip; 
+
    public bool doesthing; 
    private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Player"))
@@ -13,6 +15,11 @@ public class SpeakStarter : MonoBehaviour
             if(doesthing)
             {
                 PlayerController.Instance.Sword.SetActive(true); 
+            }
+
+            if (audioClip != null)
+            {
+                GameManager.Instance.ChangeSong(audioClip); 
             }
 
             GameManager.Instance.StartConversation(message, id ); 

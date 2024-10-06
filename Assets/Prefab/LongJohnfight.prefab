@@ -191,8 +191,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 5.010001, y: 2.882235, z: 1.5769702}
-  m_Center: {x: 1.8885956e-12, y: 1.9368358, z: 0.0063913157}
+  m_Size: {x: 6.287431, y: 3.6314282, z: 1.5769702}
+  m_Center: {x: -0.16453175, y: 2.3114328, z: 0.006391316}
 --- !u!114 &7594877711001548681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,9 +267,9 @@ MonoBehaviour:
   - m_EditModeType: 1
     m_Knots:
     - Position:
-        x: 0.74
+        x: 2.14
         y: 0
-        z: 2.9
+        z: 4.38
       TangentIn:
         x: 0
         y: 0
@@ -285,9 +285,9 @@ MonoBehaviour:
           z: 0
           w: 1
     - Position:
-        x: -1.48
+        x: -0.98
         y: 0
-        z: 2.21
+        z: 5.12
       TangentIn:
         x: 0
         y: 0
@@ -303,9 +303,9 @@ MonoBehaviour:
           z: 0
           w: 1
     - Position:
-        x: -1.41
+        x: -1.46
         y: 0
-        z: 0.1545085
+        z: 0.28
       TangentIn:
         x: 0
         y: 0
@@ -321,7 +321,7 @@ MonoBehaviour:
           z: 0
           w: 1
     - Position:
-        x: -1.4
+        x: -1.6
         y: 0
         z: -0.06250001
       TangentIn:
@@ -357,9 +357,9 @@ MonoBehaviour:
           z: 0
           w: 1
     - Position:
-        x: 1.59
+        x: 1.14
         y: 0
-        z: -3.52
+        z: -4.22
       TangentIn:
         x: 0
         y: 0
@@ -375,7 +375,7 @@ MonoBehaviour:
           z: 0
           w: 1
     - Position:
-        x: 1.9
+        x: 2.31
         y: 0
         z: -2.64
       TangentIn:
@@ -393,9 +393,9 @@ MonoBehaviour:
           z: 0
           w: 1
     - Position:
-        x: 1.54
+        x: 2.81
         y: 0
-        z: -1.63
+        z: -1.06
       TangentIn:
         x: 0
         y: 0
@@ -411,9 +411,9 @@ MonoBehaviour:
           z: 0
           w: 1
     - Position:
-        x: 1.98
+        x: 2.86
         y: 0
-        z: -1.07
+        z: -0.21
       TangentIn:
         x: 0
         y: 0
@@ -429,9 +429,9 @@ MonoBehaviour:
           z: 0
           w: 1
     - Position:
-        x: 1.87
+        x: 2.88
         y: 0
-        z: 0.16362709
+        z: 2.23
       TangentIn:
         x: 0
         y: 0
