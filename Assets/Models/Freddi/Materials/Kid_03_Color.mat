@@ -38,6 +38,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - Boolean_193028D2: 0
     - Boolean_7165A49C: 0
     - Vector1_B2CC132F: 14
     - _GlossMapScale: 0
