@@ -29,7 +29,7 @@ public class ThingController : MonoBehaviour
         yield return new WaitForSeconds(6f);
         GameManager.Instance.StartConversation("Look at your self, you are a wretch", 884); 
         yield return new WaitForSeconds(6f); 
-        GameManager.Instance.StartConversation("Pitiful excuse off a father", 28656564); 
+        GameManager.Instance.StartConversation("Pitiful excuse of a father", 28656564); 
         yield return new WaitForSeconds(6f); 
         GameManager.Instance.StartConversation("You have done NOTHING HERE", 838);
         yield return new WaitForSeconds(6f); 
