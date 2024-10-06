@@ -96,7 +96,7 @@ Material:
     - DeformMagnitude: 0.025
     - Vector1_21C41D02: 256
     - Vector1_6F288C5B: -9.5
-    - Vector1_B2CC132F: 10
+    - Vector1_B2CC132F: 128
     - Vector1_B9994903: 11
     - Vector1_E8746023: 15
     - _AddPrecomputedVelocity: 0
