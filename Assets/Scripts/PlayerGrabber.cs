@@ -23,6 +23,7 @@ public class PlayerGrabber : MonoBehaviour
             {
                 print ("player found"); 
                 player.transform.position = GrabPos.position; 
+                player.transform.rotation = GrabPos.rotation;
             }
 
             hasFoundPlayer = true; 

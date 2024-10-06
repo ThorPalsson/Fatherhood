@@ -35,7 +35,7 @@ public class Hold : MonoBehaviour
             {
                 if (cribInRange == null || HeldObject.IsBaby == false)
                 {
-                    HeldObject.Throw(500, transform.forward);
+                    HeldObject?.Throw(500, transform.forward);
                     isHolding = false;
                     pickUpInRange = null; 
                     anim.SetTrigger("Throw"); 
@@ -49,7 +49,8 @@ public class Hold : MonoBehaviour
                 }
 
                 HeldObject = null;
-                HeldBaby = BabyEnum.Babies.None;  
+                HeldBaby = BabyEnum.Babies.None; 
+                isHolding = false;  
             }
         }
 
