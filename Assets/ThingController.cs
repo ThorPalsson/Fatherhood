@@ -9,24 +9,32 @@ public class ThingController : MonoBehaviour
     public TMP_Text dialogueText;
     public ScreenShake screenShake; 
 
+    public AudioClip clip;
+
+    private void Start() {
+        StartCoroutine(WaitAndDo());
+    }
+
     private IEnumerator WaitAndDo()
-    {
+    {        
+        yield return new WaitForSeconds(6f);
+        GameManager.Instance.ChangeSong(clip); 
         GameManager.Instance.StartConversation("So here we are", 888); 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(6f);
         GameManager.Instance.StartConversation("Just you and me once again!", 878); 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(6f);
         GameManager.Instance.StartConversation("You think congratulations are in order?", 885);
-        yield return new WaitForSeconds(2f); 
-        GameManager.Instance.StartConversation("No, I will not congratulate you", 885);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(6f); 
+        GameManager.Instance.StartConversation("No, I will not congratulate you", 8858567);
+        yield return new WaitForSeconds(6f);
         GameManager.Instance.StartConversation("Look at your self, you are a wretch", 884); 
-        yield return new WaitForSeconds(2f); 
-        GameManager.Instance.StartConversation("Pitiful excuse off a father", 884); 
-        yield return new WaitForSeconds(2f); 
+        yield return new WaitForSeconds(6f); 
+        GameManager.Instance.StartConversation("Pitiful excuse of a father", 28656564); 
+        yield return new WaitForSeconds(6f); 
         GameManager.Instance.StartConversation("You have done NOTHING HERE", 838);
-        yield return new WaitForSeconds(2f); 
-        GameManager.Instance.StartConversation("NOTHING I TELL YEE", 888);  
-        yield return new WaitForSeconds(2f); 
+        yield return new WaitForSeconds(6f); 
+        GameManager.Instance.StartConversation("NOTHING I TELL YEE", 8884563);  
+        yield return new WaitForSeconds(6f); 
         SceneManager.LoadScene("EndingCutscene"); 
     }
 

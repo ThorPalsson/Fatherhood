@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 293314074}
   - component: {fileID: 293314073}
   - component: {fileID: 293314076}
+  - component: {fileID: 293314077}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -255,6 +256,20 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &293314077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293314072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9537e37afcbf94bba20e107a6ff6e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeDuration: 0.5
+  shakeIntensity: 0.2
 --- !u!1001 &1009115547
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -672,6 +687,7 @@ MonoBehaviour:
   speakSource: {fileID: 0}
   dialogueText: {fileID: 0}
   screenShake: {fileID: 0}
+  clip: {fileID: 8300000, guid: 0e77144644897a347bb774da27e294ad, type: 3}
 --- !u!4 &2075475095
 Transform:
   m_ObjectHideFlags: 0
