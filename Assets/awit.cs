@@ -11,7 +11,7 @@ public class awit : MonoBehaviour
 
     private IEnumerator waitandquit()
     {
-        yield return new WaitForSeconds(20);
+        yield return new WaitForSeconds(36);
         Application.Quit();
     }
 }
