@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
 
     private bool isStunned = false; 
     [SerializeField] private GameObject stunVisual; 
+    [SerializeField] private GameObject explosionOfBlood; 
 
     private void Start()
     {
@@ -49,5 +50,11 @@ public class Enemy : MonoBehaviour
     {
         isStunned = true; 
         stunVisual.SetActive(true); 
+    }
+
+    public void Die()
+    {
+        Instantiate(explosionOfBlood, transform.position, Quaternion.identity); 
+        Destroy(this.gameObject); 
     }
 }
