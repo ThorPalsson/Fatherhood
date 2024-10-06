@@ -11,7 +11,15 @@ public class ScreenShake : MonoBehaviour
     {
         originalPosition = transform.localPosition;
 
-        GameManager.Instance.CurrentShake = this; 
+       // GameManager.Instance.CurrentShake = this; 
+    }
+
+
+    private void Update() {
+        if (GameManager.Instance != null && GameManager.Instance.CurrentShake != this)
+        {
+            GameManager.Instance.CurrentShake = this; 
+        }
     }
 
     public void StartShake(float duration)
