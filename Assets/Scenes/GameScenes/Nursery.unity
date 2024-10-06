@@ -907,7 +907,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1091460559642941460, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
       propertyPath: message
-      value: WhErE aRe My ChIlDrEn!?!?!?!
+      value: It's bedtime, where are the babies?
       objectReference: {fileID: 0}
     - target: {fileID: 2221792747046664890, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
       propertyPath: m_Name
