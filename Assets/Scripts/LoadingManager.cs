@@ -52,7 +52,6 @@ public class LoadingManager : MonoBehaviour
         if (camera != null)
             camera.SetActive(false); 
 
-
         loadCamera.SetActive(true); 
         loadingSceneName = sceneName; 
         loadingOperation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive); 
@@ -119,8 +118,14 @@ public class LoadingManager : MonoBehaviour
         vp.Play();
         yield return new WaitForSeconds(animTimer); 
 
-        source.clip = loadingClips[UnityEngine.Random.Range(0, loadingClips.Length)];
-        source.Play();
+
+        var Randy = UnityEngine.Random.Range(0,10);
+
+        if (Randy > 5)
+        {
+            source.clip = loadingClips[UnityEngine.Random.Range(0, loadingClips.Length)];
+            source.Play();
+        }
 
         loadingOperation.allowSceneActivation = true; 
         unLoadingOperation = null; 
