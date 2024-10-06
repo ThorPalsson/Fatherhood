@@ -38,6 +38,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScenes/Basement.unity
     guid: 0ba7e4b4840a8fc43b49eb817638c9df
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/ThingScene.unity
+    guid: f90732d65ce68ec4b8f36f3d3555d287
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/EndingCutscene.unity
+    guid: 34f53c10677842344b831952d3943ef3
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

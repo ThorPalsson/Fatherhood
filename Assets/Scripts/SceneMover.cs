@@ -7,6 +7,7 @@ public class SceneMover : MonoBehaviour
     public string SceneName; 
 
     public GameObject MainCamera; 
+    
 
 
     public void OnTriggerEnter(Collider other)
