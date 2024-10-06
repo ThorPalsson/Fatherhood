@@ -30,17 +30,21 @@ public class Crib : MonoBehaviour
                     GameObject g = Instantiate(gm.JessicaPrefab, childPos.position, Quaternion.identity); 
                     g.transform.parent = childPos; 
                     g.GetComponent<PickUp>().enabled = false; 
+                    this.enabled = false;
+                    start = true; 
                     break;
                 case BabyEnum.Babies.LongJohn:
                     var g1 = Instantiate(gm.JohnCribPrefab, childPos.position, Quaternion.identity); 
                     g1.transform.parent = childPos; 
-                    //g1.GetComponent<PickUp>().enabled = false; 
+                    this.enabled = false; 
                     start = true; 
                     break;
                 case BabyEnum.Babies.Barthalamew:
                     var g2 = Instantiate(gm.BarhalamewPrefab, childPos.position, Quaternion.identity); 
                     g2.transform.parent = childPos; 
                     g2.GetComponent<PickUp>().enabled = false; 
+                    this.enabled = false; 
+                    start = true; 
                     break;
             }
 
@@ -53,6 +57,11 @@ public class Crib : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Hold.Instance.cribInRange = this; 
+        }
+
+        if (other.CompareTag("Baby"))
+        {
+            PlaceBaby(other.GetComponent<PickUp>());
         }
     }
 

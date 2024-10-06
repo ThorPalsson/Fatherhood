@@ -31,20 +31,25 @@ public class Hold : MonoBehaviour
     {
         if (isHolding) 
         {
+               if (cribInRange != null && HeldObject.IsBaby) 
+                {
+                    HeldObject.transform.parent = null;
+                    cribInRange.PlaceBaby(HeldObject);
+                    isHolding = false; 
+                    anim.SetBool("Carry", false);
+                }
+
+                
             if (Input.GetKeyDown(KeyCode.E))
             {
+             
+
                 if (cribInRange == null || HeldObject.IsBaby == false)
                 {
                     HeldObject?.Throw(500, transform.forward);
                     isHolding = false;
                     pickUpInRange = null; 
                     anim.SetTrigger("Throw"); 
-                    anim.SetBool("Carry", false);
-                } else if (cribInRange != null && HeldObject.IsBaby) 
-                {
-                    HeldObject.transform.parent = null;
-                    cribInRange.PlaceBaby(HeldObject);
-                    isHolding = false; 
                     anim.SetBool("Carry", false);
                 }
 
