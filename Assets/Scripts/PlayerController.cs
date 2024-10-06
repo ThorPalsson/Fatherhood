@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody rb; 
 
-    private bool canMove = true; 
+    public bool canMove = true; 
     [SerializeField] private Animator anim; 
 
     private void Awake()

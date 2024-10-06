@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
@@ -10,12 +11,14 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private float spawningTimer = 120;
 
     private float timer;
+    private float timetime; 
 
     private void Update()
     {
         if (!isActive) return; 
 
         timer += Time.deltaTime; 
+        timetime += Time.deltaTime; 
 
         if (timer > timebetweenSpawns)
         {
@@ -24,5 +27,17 @@ public class EnemySpawner : MonoBehaviour
             Instantiate(EnemyPrefab, tang.transform.position, Quaternion.identity); 
             timer = 0; 
         }
+
+        if (timetime > spawningTimer)
+        {
+            isActive = false; 
+        }
+    }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        	isActive = true;
+            this.transform.GetComponent<Collider>().enabled = false; 
     }
 }
