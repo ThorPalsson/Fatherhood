@@ -3623,7 +3623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ec9c5b7534aba84ca91c1eedcb4a704, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isActive: 1
+  isActive: 0
   EnemyPrefab: {fileID: 8634948972144806132, guid: 5ea61c9cd21122c4d87980ba47b3819a, type: 3}
   spawnLocations:
   - {fileID: 110284581}
@@ -7595,6 +7595,14 @@ PrefabInstance:
       value: I should stop the ritual? Alright then
       objectReference: {fileID: 0}
     - target: {fileID: 1091460559642941460, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: spawner
+      value: 
+      objectReference: {fileID: 522234412}
+    - target: {fileID: 1091460559642941460, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 660e0903a19c6174392c26f9e9380378, type: 3}
+    - target: {fileID: 1091460559642941460, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
       propertyPath: doesthing
       value: 1
       objectReference: {fileID: 0}
@@ -10269,7 +10277,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6411930936859285724, guid: b037d4359c8aefb4ba4d10edb3c4b959, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0000019073486
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6411930936859285724, guid: b037d4359c8aefb4ba4d10edb3c4b959, type: 3}
       propertyPath: m_LocalPosition.z
