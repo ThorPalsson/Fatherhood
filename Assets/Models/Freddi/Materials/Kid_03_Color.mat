@@ -39,6 +39,7 @@ Material:
     m_Ints: []
     m_Floats:
     - Boolean_7165A49C: 0
+    - Vector1_B2CC132F: 14
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
