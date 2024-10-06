@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody rb; 
 
+    public GameObject Sword;
+
     public bool canMove = true; 
     [SerializeField] private Animator anim; 
 

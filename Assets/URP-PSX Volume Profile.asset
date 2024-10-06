@@ -87,7 +87,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c23e3b12dc18c42a140437e53d3951, type: 3}
   m_Name: Tonemapping
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   mode:
     m_OverrideState: 1
     m_Value: 0
@@ -136,21 +136,21 @@ MonoBehaviour:
     m_Value: 1
   screenBendX:
     m_OverrideState: 1
-    m_Value: 12
+    m_Value: 15
   screenBendY:
     m_OverrideState: 1
-    m_Value: 12
+    m_Value: 15
   vignetteAmount:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   vignetteSize:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 0.01
   vignetteRounding:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   vignetteSmoothing:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   scanlinesDensity:
     m_OverrideState: 1
@@ -160,13 +160,13 @@ MonoBehaviour:
     m_Value: 0
   noiseAmount:
     m_OverrideState: 1
-    m_Value: 364
+    m_Value: 1140.6
   chromaticRed:
     m_OverrideState: 1
-    m_Value: {x: 0.002, y: -0.002}
+    m_Value: {x: 0.001, y: -0.001}
   chromaticGreen:
     m_OverrideState: 1
-    m_Value: {x: -0.002, y: 0.002}
+    m_Value: {x: -0.001, y: 0.001}
   chromaticBlue:
     m_OverrideState: 1
     m_Value: {x: 0, y: 0}
@@ -178,16 +178,16 @@ MonoBehaviour:
     m_Value: -2.31
   grilleResolution:
     m_OverrideState: 1
-    m_Value: 360
+    m_Value: 0
   grilleCounterResolution:
     m_OverrideState: 1
-    m_Value: 540
+    m_Value: 0
   grilleUvRotation:
     m_OverrideState: 1
     m_Value: 90
   grilleBrightness:
     m_OverrideState: 1
-    m_Value: 32.4
+    m_Value: 36.7
   grilleUvMidPoint:
     m_OverrideState: 1
     m_Value: 0.5
@@ -320,13 +320,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a1bd58dd7548198609eabd8ae2bb7d, type: 3}
   m_Name: Pixelation
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   widthPixelation:
     m_OverrideState: 1
-    m_Value: 512
+    m_Value: 640
   heightPixelation:
     m_OverrideState: 1
-    m_Value: 256
+    m_Value: 480
   colorPrecision:
     m_OverrideState: 1
     m_Value: 16
@@ -367,7 +367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ea62842ddb6960488930897ba9ce398, type: 3}
   m_Name: Dithering
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   patternIndex:
     m_OverrideState: 1
     m_Value: 2
@@ -499,7 +499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf1aba9553839d41ae37dd52e9ebcce, type: 3}
   m_Name: MotionBlur
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   mode:
     m_OverrideState: 1
     m_Value: 0

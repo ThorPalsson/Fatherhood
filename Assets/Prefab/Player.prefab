@@ -187,6 +187,7 @@ GameObject:
   - component: {fileID: 6817264625656044092}
   - component: {fileID: 5674331832381720008}
   - component: {fileID: 7156149949620288623}
+  - component: {fileID: 1966799284243308712}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -304,6 +305,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 5
   turnSpeed: 100
+  Sword: {fileID: 4206696637734395949}
+  canMove: 1
   anim: {fileID: 8456774089672923432}
 --- !u!114 &3336929720369638397
 MonoBehaviour:
@@ -372,6 +375,19 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7212604523585919910}
   m_Enabled: 1
+--- !u!114 &1966799284243308712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7212604523585919910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcb576b84f6fa814da379fa8858c02b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneName: 
 --- !u!1001 &461356244152373432
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -533,6 +549,11 @@ PrefabInstance:
 --- !u!4 &1794342438664121348 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3964909240479512452, guid: 1f3a190b6d7f9bc4f9afe3a048883be2, type: 3}
+  m_PrefabInstance: {fileID: 3450011312766737280}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4206696637734395949 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1549756482192898989, guid: 1f3a190b6d7f9bc4f9afe3a048883be2, type: 3}
   m_PrefabInstance: {fileID: 3450011312766737280}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &7992585951590736680 stripped
