@@ -59,7 +59,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sitting
+  m_Name: Stogey
   m_Speed: 20
   m_CycleOffset: 0
   m_Transitions: []
@@ -72,7 +72,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: b159642276159c94dad6c1de33ae370d, type: 3}
+  m_Motion: {fileID: -203655887218126122, guid: 0bb0c10020fadf04784c4b93974ea6c3, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
