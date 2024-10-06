@@ -150,9 +150,9 @@ MonoBehaviour:
   JessicaDone: 0
   JohnDone: 0
   BarthalamewDone: 0
-  JessicaPrefab: {fileID: 7205932332438331876, guid: 40dda370e8ef9004c9e0c1ea63bc7cef, type: 3}
+  JessicaPrefab: {fileID: 4023354745793689233, guid: 55d88c17ea3a70145807bb5594cb5022, type: 3}
   JohnPrefab: {fileID: 7205932332438331876, guid: 40dda370e8ef9004c9e0c1ea63bc7cef, type: 3}
-  BarhalamewPrefab: {fileID: 7205932332438331876, guid: 40dda370e8ef9004c9e0c1ea63bc7cef, type: 3}
+  BarhalamewPrefab: {fileID: 7845595087708837780, guid: 8996cd8151a4d2544ad094acd1c76eef, type: 3}
   RoomParent: {fileID: 0}
   cribs:
   - Id: 0
