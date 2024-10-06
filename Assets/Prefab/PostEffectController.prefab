@@ -74,8 +74,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   volumeProfile: {fileID: 11400000, guid: 7bbe35cdf5d69e14abbb03eccedaa5bd, type: 2}
   isEnabled: 1
-  widthPixelation: 512
-  heightPixelation: 256
+  widthPixelation: 640
+  heightPixelation: 480
   colorPrecision: 16
 --- !u!114 &4652692157951692006
 MonoBehaviour:
@@ -91,10 +91,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   volumeProfile: {fileID: 11400000, guid: 7bbe35cdf5d69e14abbb03eccedaa5bd, type: 2}
   isEnabled: 1
-  patternIndex: 2
-  ditherThreshold: 10
-  ditherStrength: 1
-  ditherScale: 2
+  patternIndex: 1
+  ditherThreshold: 13
+  ditherStrength: 61.5
+  ditherScale: 2.82
 --- !u!114 &6455241006899209771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,23 +111,23 @@ MonoBehaviour:
   isEnabled: 1
   scanlinesWeight: 1
   noiseWeight: 1
-  screenBendX: 12
-  screenBendY: 12
+  screenBendX: 15
+  screenBendY: 15
   vignetteAmount: 0
-  vignetteSize: 0
+  vignetteSize: 0.01
   vignetteRounding: 0
   vignetteSmoothing: 0
   scanLinesDensity: 0
   scanLinesSpeed: 0
-  noiseAmount: 364
-  chromaticRed: {x: 0.002, y: -0.002}
-  chromaticGreen: {x: -0.002, y: 0.002}
+  noiseAmount: 1140.6
+  chromaticRed: {x: 0.001, y: -0.001}
+  chromaticGreen: {x: -0.001, y: 0.001}
   chromaticBlue: {x: 0, y: 0}
   grilleOpacity: -0.61
   grilleCounterOpacity: -2.31
-  grilleResolution: 360
-  grilleCounterResolution: 540
-  grilleBrightness: 32.4
+  grilleResolution: 0
+  grilleCounterResolution: 0
+  grilleBrightness: 36.7
   grilleUvRotation: 90
   grilleUvMidPoint: 0.5
   grilleShift: {x: 1, y: 1, z: 1}
