@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2356051241375012305
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1469529919615674656}
+  - component: {fileID: 4503883402451050507}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1469529919615674656
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2356051241375012305}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.0500546, y: 6.926546, z: -1.9326673}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4503883402451050507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2356051241375012305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d31f5012da8cab647b649bfe2187c641, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JessicaDone: 0
+  JohnDone: 0
+  BarthalamewDone: 0
+  JessicaPrefab: {fileID: 4023354745793689233, guid: 55d88c17ea3a70145807bb5594cb5022, type: 3}
+  JohnPrefab: {fileID: 7356220561441473458, guid: 3f35a006d5d97d24f90bd67f39cd9bce, type: 3}
+  BarhalamewPrefab: {fileID: 7845595087708837780, guid: 8996cd8151a4d2544ad094acd1c76eef, type: 3}
+  RoomParent: {fileID: 0}
+  cribs:
+  - Id: 0
+    Baby: 0
+  - Id: 1
+    Baby: 0
+  - Id: 2
+    Baby: 0
+  - Id: 3
+    Baby: 0
