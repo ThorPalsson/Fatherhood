@@ -176,6 +176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cdebe2e3c6e3ea541a71e66c7bfed000, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6786320725658967303, guid: cdebe2e3c6e3ea541a71e66c7bfed000, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -266,11 +270,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9814b11bce6af0c4794807632f9a60b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 4
+  moveSpeed: 2
   turnSpeed: 5
   attackRange: 0.75
   stunVisual: {fileID: 732494427479597049}
-  explosionOfBlood: {fileID: 0}
+  explosionOfBlood: {fileID: 4347407838461653223, guid: b2bdfef9e7b582143ae82836854d9145, type: 3}
 --- !u!65 &726272198820177661
 BoxCollider:
   m_ObjectHideFlags: 0
