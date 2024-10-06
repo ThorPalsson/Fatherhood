@@ -902,6 +902,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1091460559642941460, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: id
+      value: 81092
+      objectReference: {fileID: 0}
+    - target: {fileID: 1091460559642941460, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
       propertyPath: message
       value: WhErE aRe My ChIlDrEn!?!?!?!
       objectReference: {fileID: 0}
@@ -911,7 +915,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2221792747046664890, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
       propertyPath: m_LocalPosition.x

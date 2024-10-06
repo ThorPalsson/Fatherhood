@@ -28,20 +28,20 @@ public class BabySpawner : MonoBehaviour
 
                     print ("Spawning baby"); 
                     var g = Instantiate(gameManager.JessicaPrefab, this.transform.position, Quaternion.identity); 
-                    g.transform.parent = gameManager.RoomParent.transform; 
+                    g.transform.parent = this.transform; 
                     break;
 
                 case BabyEnum.Babies.LongJohn:
                     if (gameManager.JohnDone || hold.HeldBaby == BabyEnum.Babies.LongJohn) break; 
                 
                     var g2 = Instantiate(gameManager.JohnPrefab, this.transform.position, Quaternion.identity);
-                    g2.transform.parent = gameManager.RoomParent.transform; 
+                    g2.transform.parent = this.transform; 
                     break;
                 case BabyEnum.Babies.Barthalamew:
                     if (gameManager.BarthalamewDone || hold.HeldBaby == BabyEnum.Babies.Barthalamew) break; 
 
                     var g3 = Instantiate(gameManager.BarhalamewPrefab, this.transform.position, Quaternion.identity); 
-                    g3.transform.parent = gameManager.RoomParent.transform; 
+                    g3.transform.parent = this.transform; 
                     break;
             }
 

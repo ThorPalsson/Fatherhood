@@ -32,9 +32,10 @@ public class Crib : MonoBehaviour
                     g.GetComponent<PickUp>().enabled = false; 
                     break;
                 case BabyEnum.Babies.LongJohn:
-                    var g1 = Instantiate(gm.JohnPrefab, childPos.position, Quaternion.identity); 
+                    var g1 = Instantiate(gm.JohnCribPrefab, childPos.position, Quaternion.identity); 
                     g1.transform.parent = childPos; 
-                    g1.GetComponent<PickUp>().enabled = false; 
+                    //g1.GetComponent<PickUp>().enabled = false; 
+                    start = true; 
                     break;
                 case BabyEnum.Babies.Barthalamew:
                     var g2 = Instantiate(gm.BarhalamewPrefab, childPos.position, Quaternion.identity); 

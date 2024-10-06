@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -13,6 +14,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject JessicaPrefab; 
     public GameObject JohnPrefab; 
+    public GameObject JohnCribPrefab; 
     public GameObject BarhalamewPrefab; 
 
     public GameObject RoomParent;
@@ -21,6 +23,10 @@ public class GameManager : MonoBehaviour
 
     public GameObject DialogueParent; 
     public TMP_Text dialogueText;
+
+    public List<int> NarrativeIds = new List<int>();  
+
+    [SerializeField] private AudioSource source; 
 
 
     private void Awake()
@@ -34,13 +40,25 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
-    public void StartConversation(string message)
+    public void ChangeSong(AudioClip clip)
     {
+        source.clip = clip; 
+        source.Play();
+    }
+
+    public void StartConversation(string message, int id)
+    {
+        if (NarrativeIds.Contains(id))
+        {
+            return; 
+        }
+
         PlayerController.Instance.canMove = false; 
         DialogueParent.SetActive(true); 
 
         StartCoroutine(Type(message)); 
+
+        NarrativeIds.Add(id); 
     }
 
     public void EndConversation()
