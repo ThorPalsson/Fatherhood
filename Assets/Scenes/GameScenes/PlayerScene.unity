@@ -673,6 +673,10 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 4503883402451050507, guid: 191bd87ac901c8a4f8717354ec7d1149, type: 3}
+      propertyPath: defaultClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3cdbdb4f15f67e348b1b13f8cfac32af, type: 3}
+    - target: {fileID: 4503883402451050507, guid: 191bd87ac901c8a4f8717354ec7d1149, type: 3}
       propertyPath: speakSource
       value: 
       objectReference: {fileID: 1893516943}
@@ -684,6 +688,34 @@ PrefabInstance:
       propertyPath: DialogueParent
       value: 
       objectReference: {fileID: 698869177}
+    - target: {fileID: 4503883402451050507, guid: 191bd87ac901c8a4f8717354ec7d1149, type: 3}
+      propertyPath: defaultClip.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503883402451050507, guid: 191bd87ac901c8a4f8717354ec7d1149, type: 3}
+      propertyPath: 'defaultClip.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 7e352f448be683744bb16b64aee296cf, type: 3}
+    - target: {fileID: 4503883402451050507, guid: 191bd87ac901c8a4f8717354ec7d1149, type: 3}
+      propertyPath: 'defaultClip.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 3cdbdb4f15f67e348b1b13f8cfac32af, type: 3}
+    - target: {fileID: 4503883402451050507, guid: 191bd87ac901c8a4f8717354ec7d1149, type: 3}
+      propertyPath: 'defaultClip.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 7e352f448be683744bb16b64aee296cf, type: 3}
+    - target: {fileID: 4503883402451050507, guid: 191bd87ac901c8a4f8717354ec7d1149, type: 3}
+      propertyPath: 'defaultClip.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 1f97110baee6bb448aa82259a6fa2af6, type: 3}
+    - target: {fileID: 7436168499050678223, guid: 191bd87ac901c8a4f8717354ec7d1149, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 1f97110baee6bb448aa82259a6fa2af6, type: 3}
+    - target: {fileID: 7436168499050678223, guid: 191bd87ac901c8a4f8717354ec7d1149, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1f97110baee6bb448aa82259a6fa2af6, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

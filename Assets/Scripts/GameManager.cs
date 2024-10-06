@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private AudioSource source; 
     [SerializeField] private AudioSource speakSource;
 
-    [SerializeField] private AudioClip defaultClip; 
+    [SerializeField] private AudioClip[] defaultClip; 
 
 
     private void Awake()
@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
 
     public void DefaultSong()
     {
-        source.clip = defaultClip; 
+        source.clip = defaultClip[UnityEngine.Random.Range(0, defaultClip.Length)]; 
         source.Play();
     }
 
