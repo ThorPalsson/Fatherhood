@@ -24,6 +24,11 @@ public class LoadingManager : MonoBehaviour
 
     private bool isFirst = true;  
 
+    [SerializeField] private AudioClip[] loadingClips; 
+
+
+    [SerializeField] private AudioSource source; 
+
 
     private void Awake()
     {
@@ -113,6 +118,9 @@ public class LoadingManager : MonoBehaviour
 
         vp.Play();
         yield return new WaitForSeconds(animTimer); 
+
+        source.clip = loadingClips[UnityEngine.Random.Range(0, loadingClips.Length)];
+        source.Play();
 
         loadingOperation.allowSceneActivation = true; 
         unLoadingOperation = null; 
