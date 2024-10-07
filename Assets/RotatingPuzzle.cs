@@ -10,7 +10,6 @@ public class RotatingPuzzle : MonoBehaviour
     public float winThreshold = 0.1f;
 
     public GameObject MainCamera; 
-
     private bool hasWon;
 
     void Update()

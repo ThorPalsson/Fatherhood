@@ -11521,7 +11521,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6607476277169459232, guid: b037d4359c8aefb4ba4d10edb3c4b959, type: 3}
       propertyPath: RoomFrom
-      value: MainRoom
+      value: Stair
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

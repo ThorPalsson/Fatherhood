@@ -3792,7 +3792,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7900098742433054552, guid: e83a23f214e69734599d424e2d86e71e, type: 3}
       propertyPath: SceneName
-      value: Basement
+      value: Stair
       objectReference: {fileID: 0}
     - target: {fileID: 7900098742433054552, guid: e83a23f214e69734599d424e2d86e71e, type: 3}
       propertyPath: MainCamera

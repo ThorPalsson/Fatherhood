@@ -15,6 +15,11 @@ public class ScreenShake : MonoBehaviour
     }
 
 
+    public void ChangeOG(Vector3 s)
+    {
+        originalPosition = s; 
+    }
+
     private void Update() {
         if (GameManager.Instance != null && GameManager.Instance.CurrentShake != this)
         {

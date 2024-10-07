@@ -11,6 +11,8 @@ public class MoveCamera : MonoBehaviour
         {
             theCamera.transform.position = camMovePos.transform.position;
             theCamera.transform.rotation = camMovePos.transform.rotation;
+
+            theCamera.GetComponent<ScreenShake>().ChangeOG(camMovePos.transform.position); 
         }
    }
 }
