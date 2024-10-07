@@ -96,6 +96,11 @@ public class LoadingManager : MonoBehaviour
             }
         }
 
+        if (SceneManager.sceneCount > 5)
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+
         if (hasLoaded  && !isAnimating)
         {
             StartCoroutine(AnimateAndLoad()); 

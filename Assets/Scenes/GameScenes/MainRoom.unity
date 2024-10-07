@@ -7139,6 +7139,83 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 713307121146545090, guid: 1474b5916fa1c6d489e184ab914a4303, type: 3}
   m_PrefabInstance: {fileID: 2091688233}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2099045966
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1091460559642941460, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: id
+      value: 56482
+      objectReference: {fileID: 0}
+    - target: {fileID: 1091460559642941460, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: message
+      value: I can also throw held item by pressing "E"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221792747046664890, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_Name
+      value: DialogueTrigger (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221792747046664890, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5603338
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 23.98641
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.017461373
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9998476
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -177.999
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025317710744515708, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52b649cb33955ac48a160b073c6bdbcd, type: 3}
 --- !u!1001 &2112621094
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7813,5 +7890,6 @@ SceneRoots:
   - {fileID: 67201493}
   - {fileID: 424459500}
   - {fileID: 1638394241}
+  - {fileID: 2099045966}
   - {fileID: 838476878}
   - {fileID: 1502220102}

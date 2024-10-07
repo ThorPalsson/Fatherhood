@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
 
    private void Start()
    {
+
         //SceneManager.LoadSceneAsync("DoorScene"); 
         button.onClick.AddListener(() => LoadGame()); 
    }
@@ -17,6 +18,8 @@ public class MainMenu : MonoBehaviour
 
    private void LoadGame()
    {
+               Cursor.visible = false;
+          Cursor.lockState = CursorLockMode.Locked;
         SceneManager.LoadScene("DoorScene"); 
    }
 }
