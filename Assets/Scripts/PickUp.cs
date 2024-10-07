@@ -47,7 +47,6 @@ public class PickUp : MonoBehaviour
         if (rb.linearVelocity.magnitude > 1)
         {
             var col = collision.collider; 
-            print ($"i crashed into {col.name}");
             if (col.CompareTag("Enemy"))
             {
                 col.GetComponent<Enemy>().Stun(); 

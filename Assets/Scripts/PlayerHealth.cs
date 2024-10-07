@@ -11,7 +11,6 @@ public class PlayerHealth : MonoBehaviour
 
         if (Health  <= 0 )
         {
-            print ("Death");
         }
     }
 }

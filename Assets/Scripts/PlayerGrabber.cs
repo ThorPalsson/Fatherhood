@@ -21,7 +21,6 @@ public class PlayerGrabber : MonoBehaviour
 
             if (RoomFrom == player.transform.GetComponent<RoomHolder>().SceneName)
             {
-                print ("player found"); 
                 player.transform.position = GrabPos.position; 
                 player.transform.rotation = GrabPos.rotation;
             }

@@ -26,7 +26,6 @@ public class Crib : MonoBehaviour
                 case BabyEnum.Babies.None:
                     break;
                 case BabyEnum.Babies.Jessica:
-                    print ("spawning jessica in crib");
                     GameObject g = Instantiate(gm.JessicaPrefab, childPos.position, Quaternion.identity); 
                     g.transform.parent = childPos; 
                     g.GetComponent<PickUp>().enabled = false; 

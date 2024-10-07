@@ -41,7 +41,7 @@ public class RotatingPuzzle : MonoBehaviour
         private IEnumerator WinGame()
         {
             GameManager.Instance.StartConversation("You did it! The darkness claims you!", 420698880); 
-            yield return new WaitForSeconds(6);
+            yield return new WaitForSeconds(6); 
             LoadingManager.Instance.LoadScene("ThingScene", MainCamera); 
         }
 }

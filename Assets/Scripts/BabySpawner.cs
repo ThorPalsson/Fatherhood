@@ -19,14 +19,12 @@ public class BabySpawner : MonoBehaviour
            var hold = pc.transform.GetComponent<Hold>();
 
 
-            print (hold.HeldBaby); 
 
             switch(ThisBaby)
             {
                 case BabyEnum.Babies.Jessica:
                     if (gameManager.JessicaDone || hold.HeldBaby == BabyEnum.Babies.Jessica) break;  
 
-                    print ("Spawning baby"); 
                     var g = Instantiate(gameManager.JessicaPrefab, this.transform.position, Quaternion.identity); 
                     g.transform.parent = this.transform; 
                     break;

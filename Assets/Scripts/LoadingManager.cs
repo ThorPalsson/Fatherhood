@@ -69,7 +69,6 @@ public class LoadingManager : MonoBehaviour
 
     private void DeloadScene()
     {
-        print ("unloading " + currentMainSceneName); 
         if (String.IsNullOrEmpty(currentMainSceneName))
         {
             hasUnloaded = true;
@@ -82,7 +81,6 @@ public class LoadingManager : MonoBehaviour
     {
         if (loadingOperation != null && !hasLoaded)
         {
-            Debug.Log($"Loading progress is = {loadingOperation.progress}");
 
             if (loadingOperation.progress >= 0.9f)
             {
@@ -94,7 +92,6 @@ public class LoadingManager : MonoBehaviour
         {
             if (unLoadingOperation.isDone)
             {
-                Debug.Log("Unloading complete.");
                 hasUnloaded = true;
             }
         }

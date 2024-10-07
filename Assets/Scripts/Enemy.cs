@@ -31,12 +31,7 @@ public class Enemy : MonoBehaviour
         }
 
         Vector3 direction = (pc.transform.position - transform.position).normalized;
-        float distance = Vector3.Distance(transform.position, pc.transform.position); 
-
-        if (distance < attackRange)
-        {
-            print ("damage player"); 
-        }
+        //float distance = Vector3.Distance(transform.position, pc.transform.position); 
 
         Vector3 movement = direction * moveSpeed * Time.fixedDeltaTime; 
         rb.MovePosition(rb.position + movement); 

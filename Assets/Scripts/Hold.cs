@@ -65,7 +65,6 @@ public class Hold : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            print ("pickup");
            pickUpInRange.PickThisUp(holdPosition);
            HeldObject = pickUpInRange; 
            pickUpInRange = null; 
@@ -76,7 +75,6 @@ public class Hold : MonoBehaviour
 
            if (HeldObject.IsBaby)
            {
-                print ("Setting hold baby to "+ HeldObject.thisBaby.ToString()); 
                 HeldBaby = HeldObject.thisBaby; 
            }
         }
