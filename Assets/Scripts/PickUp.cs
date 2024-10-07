@@ -62,6 +62,9 @@ public class PickUp : MonoBehaviour
 
     public void PickThisUp(Transform thing)
     {
+
+        GameManager.Instance.StartConversation("Now I should bring it back to its crib!", 111247);
+
         rb.isKinematic = true; 
         col.enabled = false; 
         trigger.enabled = false;

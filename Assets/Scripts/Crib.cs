@@ -77,7 +77,7 @@ public class Crib : MonoBehaviour
 
     public void PlaceBaby(PickUp baby)
     {
-        print ("placing baby");
+        
         
         baby.transform.parent = GameManager.Instance.RoomParent.transform; 
         baby.transform.position = childPos.position; 
@@ -88,16 +88,19 @@ public class Crib : MonoBehaviour
                 GameManager.Instance.JessicaDone = true; 
                 var entry = GameManager.Instance.cribs.First(x => x.Id == cribId); 
                 entry.Baby = BabyEnum.Babies.Jessica;
+                GameManager.Instance.StartConversation("Sweet dreams Jessica", 6662); 
                 break; 
             case BabyEnum.Babies.LongJohn:
                 GameManager.Instance.JohnDone = true; 
                 var entry3 = GameManager.Instance.cribs.First(x => x.Id == cribId); 
                 entry3.Baby = BabyEnum.Babies.LongJohn;
+                GameManager.Instance.StartConversation("Never surrender Long John Silver", 66262); 
                 break; 
             case BabyEnum.Babies.Barthalamew:
                 GameManager.Instance.BarthalamewDone = true; 
                 var entry5 = GameManager.Instance.cribs.First(x => x.Id == cribId); 
                 entry5.Baby = BabyEnum.Babies.Barthalamew;
+                GameManager.Instance.StartConversation("Please stop smoking Bartholomew", 64262);
                 break; 
         }
 

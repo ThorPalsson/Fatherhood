@@ -122,13 +122,13 @@ public class LoadingManager : MonoBehaviour
         yield return new WaitForSeconds(animTimer); 
 
 
-        var Randy = UnityEngine.Random.Range(0,10);
+        /*var Randy = UnityEngine.Random.Range(0,10);
 
         if (Randy > 5)
         {
             source.clip = loadingClips[UnityEngine.Random.Range(0, loadingClips.Length)];
             source.Play();
-        }
+        }*/
 
         loadingOperation.allowSceneActivation = true; 
         unLoadingOperation = null; 

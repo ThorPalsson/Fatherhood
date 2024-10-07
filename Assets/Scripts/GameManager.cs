@@ -90,6 +90,7 @@ public class GameManager : MonoBehaviour
 
         //Typing is over
 
+
         speakSource.Stop();
         yield return new WaitForSeconds(1.5f); 
         EndConversation();
