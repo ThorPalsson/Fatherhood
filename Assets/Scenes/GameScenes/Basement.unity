@@ -444,8 +444,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7900098742433054552, guid: e83a23f214e69734599d424e2d86e71e, type: 3}
       propertyPath: SceneName
-      value: ThingScene
+      value: Puzzle
       objectReference: {fileID: 0}
+    - target: {fileID: 7900098742433054552, guid: e83a23f214e69734599d424e2d86e71e, type: 3}
+      propertyPath: MainCamera
+      value: 
+      objectReference: {fileID: 4906398110753887874}
     - target: {fileID: 9034336771456296561, guid: e83a23f214e69734599d424e2d86e71e, type: 3}
       propertyPath: m_Name
       value: LeaveScene
