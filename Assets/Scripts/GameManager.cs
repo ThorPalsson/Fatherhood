@@ -31,6 +31,10 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private AudioClip[] defaultClip; 
 
+    private bool changePitch; 
+
+    private float targetPitch;
+
 
     private void Awake()
     {
@@ -68,6 +72,19 @@ public class GameManager : MonoBehaviour
         StartCoroutine(Type(message)); 
 
         NarrativeIds.Add(id); 
+    }
+
+    private void Update() {
+        if (changePitch)
+        {
+            source.pitch = Mathf.Lerp(source.pitch, targetPitch, Time.deltaTime);
+        }
+    }
+
+    public void ChangePitch()
+    {
+        changePitch = true; 
+        targetPitch = UnityEngine.Random.Range(-1f, 2f); 
     }
 
     public void EndConversation()
