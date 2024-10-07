@@ -47,10 +47,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void ChangeSong(AudioClip clip)
+    public void ChangeSong(AudioClip clip, float pitch = 1)
     {
         source.clip = clip; 
         source.Play();
+        source.pitch = pitch; 
     }
 
     public void DefaultSong()

@@ -11,6 +11,9 @@ public class RotatingPuzzle : MonoBehaviour
 
     public GameObject MainCamera; 
     private bool hasWon;
+    public GameObject Video; 
+
+    public AudioClip clip; 
 
     void Update()
     {
@@ -42,6 +45,9 @@ public class RotatingPuzzle : MonoBehaviour
         {
             GameManager.Instance.StartConversation("You did it! The darkness claims you!", 420698880); 
             yield return new WaitForSeconds(6); 
+            Video.SetActive(true);
+            GameManager.Instance.ChangeSong(clip, 0.3f);
+            yield return new WaitForSeconds(5.5f);
             LoadingManager.Instance.LoadScene("ThingScene", MainCamera); 
         }
 }
